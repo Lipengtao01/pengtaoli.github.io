@@ -63,7 +63,7 @@ const closeMenu = () => { nav.classList.remove('open'); menuButton.setAttribute(
 menuButton.addEventListener('click', () => { const open = nav.classList.toggle('open'); menuButton.setAttribute('aria-expanded',String(open)); });
 nav.querySelectorAll('a').forEach(a => a.addEventListener('click',closeMenu));
 document.addEventListener('keydown',e => {if(e.key==='Escape' && nav.classList.contains('open')) {closeMenu();menuButton.focus();}});
-matchMedia('(min-width:601px)').addEventListener('change',e=>{if(e.matches)closeMenu();});
+matchMedia('(min-width:721px)').addEventListener('change',e=>{if(e.matches)closeMenu();});
 
 document.querySelectorAll('.copy-citation').forEach(button => button.addEventListener('click',async()=>{
   const panel=button.closest('.citation-panel');
