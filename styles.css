@@ -20,6 +20,11 @@
 
 .hero-bio a{color:var(--text);text-decoration:underline;text-decoration-color:var(--link-line);text-underline-offset:4px}
 
+.hero-profile-links{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:16px}
+.hero-profile-links a{display:inline-flex;align-items:center;min-height:44px;font-size:14px;font-weight:500;color:var(--accent);text-decoration:underline;text-decoration-color:var(--link-line);text-underline-offset:5px}
+.hero-profile-links a:hover,.hero-profile-links a:focus-visible{text-decoration-color:currentColor}
+@media print{.hero-profile-links a{color:#111}}
+
 /* Profile photo and bilingual name. */
 .profile-photo{width:100%;max-width:390px;justify-self:end;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--panel)}
 .profile-photo img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:54% 50%}
